@@ -1,4 +1,4 @@
-# ⚽ Discord Merit & Schedule Bot
+# Discord Merit & Schedule Bot
 
 Discord bot for managing **merit**, **points**, and **match schedules**, with role-based permissions, leaderboards, reminders, and automatic role promotion.
 
@@ -7,18 +7,21 @@ Discord bot for managing **merit**, **points**, and **match schedules**, with ro
 ## Installation & Setup
 
 ### Clone repository
+```bash
 git clone https://github.com/username/discord-merit-schedule-bot.git
 cd discord-merit-schedule-bot
-
+```
 ### Install dependencies
+```bash
 npm install
-
+```
 ---
 
 ## Environment Variables
 Create a `.env` file in the project root:
+```bash
 TOKEN=your_discord_bot_token
-
+```
 ---
 
 ## Configuration
@@ -35,20 +38,23 @@ Edit `index.js` to match your server setup:
 ---
 
 ## Run the bot
+```bash
 node index.js
-
+```
 ---
 
 ## Commands
 
 ### Merit System
+```bash
 !addmerit @user <amount>  
 !deductmerit @user <amount>  
 !resetmerit @user  
 !checkmerit @user  
 !lbmerit  
-
+```
 ### Points & Stats
+```bash
 !addpoints @user <amount>  
 !deductpoints @user <amount>  
 !resetpoints @user  
@@ -62,13 +68,14 @@ node index.js
 !lbassist  
 !lbsave  
 !resetall @user  
-
+```
 ### Schedule
+```bash
 !addsched <team>, <schedule name>, <DD/MM/YYYY HH:mm>  
 !checksched <team>  
 !deletesched <team> <number>  
-
-⏰ Reminders:  
+```
+Reminders:  
 - 30 minutes before the match.  
 - 5 minutes before the match.  
 
