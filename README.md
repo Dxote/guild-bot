@@ -8,8 +8,8 @@ Discord bot for managing **merit**, **points**, and **match schedules**, with ro
 
 ### Clone repository
 ```bash
-git clone https://github.com/username/discord-merit-schedule-bot.git
-cd discord-merit-schedule-bot
+git clone https://github.com/Dxote/guild-bot
+cd guild-bot
 ```
 ### Install dependencies
 ```bash
