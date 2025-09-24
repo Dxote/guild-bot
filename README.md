@@ -87,13 +87,13 @@ Reminders:
 - Use date format: `DD/MM/YYYY HH:mm`.  
 
 ## Additional
-- To track your bot, to keep your Discord bot running, automatically restart it if it disconnects
+- Track the bot, to keep your Discord bot running, automatically restart it if it disconnects
 
 Install pm2 (globally)
 ```bash
 npm install -g pm2
 ```
-Start your bot
+Start the bot
 ```bash
 pm2 start index.js --name guild-bot
 ```
