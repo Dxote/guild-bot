@@ -12,9 +12,7 @@ const {
   require('dotenv').config();
   
   const logChannels = {
-    '1352299703928225843': '1367833987804037221',
-    '1367735308761960469': '1367835023331295232',
-    '1363968776839762030': '1367835215246004224',
+     'Put your log discord channel ID here for logging'
   };
   
   async function logCommandUsage(message, command) {
@@ -80,57 +78,21 @@ const {
   
   // ===== Tier Roles =====
   const tierRoles = [
-    { roleId: '1352340182728179712', nextRoleId: '1352340230790709278', requiredMerit: 2 },
-    { roleId: '1352340230790709278', nextRoleId: '1352340272968630404', requiredMerit: 2 },
-    { roleId: '1352340272968630404', nextRoleId: '1352340315343814788', requiredMerit: 2 },
-    { roleId: '1352340315343814788', nextRoleId: '1352340511330926612', requiredMerit: 5 },
+    // Put role and next role and required merits to get auto changes on roles, ex
+    { roleId: '1234567890', nextRoleId: '0987654321', requiredMerit: 2 }, // Require 2 merit to change roles
   ];
 
   const roleNames = {
-    '1352340182728179712': 'C',
-    '1352340230790709278': 'B-',
-    '1352340272968630404': 'B',
-    '1352340315343814788': 'B+',
-    '1352340511330926612': 'A',
+    // Put your role ID and name here, ex
+    '1234567890 (Role ID)': 'Name Role',
   };
 
   const allowedRoles = new Set([
-    '1352427677247602819',
-    '1367821378857992223',
-    '1367755988400078939',
-    '1352427842276823105',
-    '1352422621899391070',
-    '1352573575822966877',
-    '1352427387647692890',
-    '1352303010990264382',
-    '1365479109806788713',
-    '1364192402075811923',
-    '1364155594931568731',
-    '1387361710968541225',
-    '1387362332157411459',
-    '1387362378064334898',
-    '1387362497786282114',
+    // Put your role ID here to allowed specific roles to use the command
   ]);
   
   const captainRoles = new Set([
-    '1366059759790329897',
-    '1355547706138824775',
-    '1364889826830192711',
-    '1364887548308230174',
-    '1352573575822966877',
-    '1352427677247602819',
-    '1352427498993877043',
-    '1352303010990264382',
-    '1355550854924730558',
-    '1380904717583912960',
-    '1380904157678014504',
-    '1380901224492040222',
-    '1380909409160663061',
-    '1380909513934377111',
-    '1387361710968541225',
-    '1387362332157411459',
-    '1387362378064334898',
-    '1387362497786282114',
+    // Put your role ID here to allowed specific roles to use the command
   ]);
 
   function isAllowed(member) {
@@ -142,23 +104,13 @@ const {
   }  
 
   const teamChannels = {
-    susanoo: '1364890550687240232',
-    tsukuyomi: '1364888431917928520',
-    benzaiten: '1364887283190202469',
-    jigokuhen: '1355554094827311296',
-    x: '1380905297190850682',
-    dnflwrs: '1380905297190850682',
-    maplnts: '1380905297190850682',
+    // Put team discord channels ID here (To send auto mesage for schedule), ex
+    TeamName: '1234567890 (Channel ID)',
   };
 
   const teamRoles = {
-    susanoo: '1364889664065900616',
-    tsukuyomi: '1364617455175209041',
-    benzaiten: '1364618063592554659',
-    jigokuhen: '1355552072375865515',
-    x: '1380903596408832120',
-    dnflwrs: '1380903834356023367',
-    maplnts: '1380903711496339596',
+    // Put team roles ID here (To send auto mesage for schedule), ex
+    TeamName: '1234567890 (Role ID)',
   };
 
   setInterval(async () => {
@@ -954,7 +906,7 @@ const {
     
     // ===== Bot Ready =====
     client.once('ready', () => {
-    console.log(`Kawazakiiii Bot is active as ${client.user.tag}`);
+    console.log(`Bot Active as ${client.user.tag}`);
     });
 
     // ===== Login =====
