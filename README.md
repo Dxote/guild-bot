@@ -85,3 +85,15 @@ Reminders:
 - Ensure the bot has **Manage Roles** & **Send Messages** permissions.  
 - Adjust all role IDs and channel IDs in `index.js`.  
 - Use date format: `DD/MM/YYYY HH:mm`.  
+
+## Additional
+- To track your bot, to keep your Discord bot running, automatically restart it if it disconnects
+
+Install pm2 (globally)
+```bash
+npm install -g pm2
+```
+Start your bot
+```bash
+pm2 start index.js --name guild-bot
+```
